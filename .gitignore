@@ -1,0 +1,3 @@
+# Project exclude paths
+/mybatis-quick-start/target/
+target
