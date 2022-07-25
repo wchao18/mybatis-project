@@ -18,7 +18,7 @@ public class JdbcDemoTest {
 
     // Database credentials
     static final String USER = "root";
-    static final String PASS = "lixun033";
+    static final String PASS = "123456";
 
     @Test
     public void QueryStatementDemo() {

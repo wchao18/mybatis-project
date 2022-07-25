@@ -5,7 +5,8 @@
       <!--开启二级缓存-->
      <cache></cache>
 
-	<select id="selectByPrimaryKey" resultType="TUser"	parameterType="java.lang.Integer">
+    <!--useCache=true 开启二级缓存-->
+	<select id="selectByPrimaryKey" resultType="TUser" useCache="true" parameterType="java.lang.Integer">
 		select
 			id, 
 			user_name , 
@@ -18,5 +19,15 @@
 		from t_user
 		where id = #{id,jdbcType=INTEGER}
 	</select>
+
+     <insert id="insert" parameterType="com.enjoylearning.mybatis.entity.TUser">
+    insert into t_user (id, user_name, real_name,
+      sex, mobile, email,
+      note, position_id)
+    values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{realName,jdbcType=VARCHAR},
+      #{sex,jdbcType=TINYINT}, #{mobile,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR},
+      #{note,jdbcType=VARCHAR}, #{positionId,jdbcType=INTEGER})
+  </insert>
+
 
 </mapper>

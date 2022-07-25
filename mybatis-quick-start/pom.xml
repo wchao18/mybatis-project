@@ -45,11 +45,16 @@
 
 
 		<!-- mybatis相关依赖 -->
-		<dependency>
+	<!--	<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.4.6</version>
-		</dependency>
+		</dependency>-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.3-SNAPSHOT</version>
+        </dependency>
 
 	</dependencies>
 
